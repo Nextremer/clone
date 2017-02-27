@@ -76,7 +76,7 @@ function clone(parent, circular, depth, prototype, includeNonEnumerable) {
 
     var child;
     var proto;
-    if (typeof parent != 'object') {
+    if (typeof parent != 'object' || parent instanceof HTMLImageElement ) {
       return parent;
     }
 
